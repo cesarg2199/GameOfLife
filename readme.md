@@ -1,0 +1,1 @@
+Based on Jon Conway's Game of Life
