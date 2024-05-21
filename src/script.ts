@@ -116,7 +116,7 @@ const clear = () => {
 const drawAll = () => {
     clear();
     drawBoard();
-    drawBorders();
+    //drawBorders();
 }
 
 const nextGen = () => {
@@ -144,7 +144,7 @@ const prepareRandomBoard = (): boolean[][] => {
 
     for(let x = 0; x < TILES_X; x++) {
         for (let y = 0; y < TILES_Y; y++) {
-            board[x][y] = Math.random() < 0.3;
+            board[x][y] = Math.random() < 0.33;
         }
     }
 
