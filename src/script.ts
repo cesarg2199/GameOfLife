@@ -15,7 +15,7 @@ const height = window.innerHeight;
 canvas.width = width;
 canvas.height = height;
 
-const TILE_SIZE = 20;
+const TILE_SIZE = 10;
 const TILES_X = width / TILE_SIZE;
 const TILES_Y = height / TILE_SIZE;
 
