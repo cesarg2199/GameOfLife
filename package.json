@@ -1,12 +1,17 @@
 {
-  "name": "GameOfLife",
+  "name": "game-of-life",
   "version": "1.0.0",
   "description": "John Conways Game of Life",
   "main": "index.js",
   "author": "Cesar Guerrero",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.12.12",
     "parcel-bundler": "^1.12.5",
     "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "dev": "yarn parcel serve src/index.html",
+    "prod": "yarn parcel build src/index.html"
   }
 }

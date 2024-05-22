@@ -1,3 +1,5 @@
+**Game Of Life**
+
 Based on Jon Conway's Game of Life
 https://en.wikipedia.org/wiki/Conway's_Game_of_Life
 
