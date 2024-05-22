@@ -1,5 +1,3 @@
-import { createHash } from 'crypto';
-
 type Board = boolean[][];
 
 const canvas = document.querySelector<HTMLCanvasElement>('#game');
@@ -65,23 +63,7 @@ const drawBorders = () => {
     }
 };
 
-function hashArray(array: any[]): string {
-    const hash = createHash('sha256'); // You can use other algorithms like 'md5', 'sha1', etc.
-    hash.update(JSON.stringify(array));
-    return hash.digest('hex');
-}
-
-function compareArraysUsingHash(array1: any[], array2: any[]): boolean {
-    const hash1 = hashArray(array1);
-    const hash2 = hashArray(array2);
-    return hash1 === hash2;
-}
-
 const addToHistory = (board: Board) => {
-    if (compareArraysUsingHash(board, [...HISTORY].pop() ?? [])) {
-        return;
-    }
-
     if ([...HISTORY].length === 100) {
         HISTORY.pop();
     }
